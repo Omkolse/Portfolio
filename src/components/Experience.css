@@ -1,0 +1,135 @@
+.experience {
+  background: var(--bg-color);
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--accent-cyan), var(--accent-blue), transparent);
+  box-shadow: 0 0 10px var(--glow-cyan);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: var(--bg-color);
+  border: 2px solid var(--accent-cyan);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-cyan);
+  z-index: 10;
+}
+
+.timeline-content {
+  width: calc(50% - 40px);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-cyan);
+}
+
+.timeline-year {
+  display: inline-block;
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.timeline-title {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-company {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.timeline-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.experience-certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cert-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  color: var(--accent-cyan);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cert-link:hover {
+  background: var(--accent-cyan);
+  color: #03040c;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-item, .timeline-item:nth-child(even) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .timeline-dot {
+    left: 20px;
+  }
+  .timeline-content {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+}
