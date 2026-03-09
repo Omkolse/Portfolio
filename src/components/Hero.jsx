@@ -66,7 +66,7 @@ const Hero = () => {
             <a href="#projects" className="btn btn-primary">
               View Projects <ChevronRight size={18} />
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
               Resume <FileText size={18} />
             </a>
             <a href="#contact" className="btn btn-secondary">

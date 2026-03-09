@@ -16,12 +16,12 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '/#about' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Skills', href: '/#skills' },
-    { name: 'Experience', href: '/#experience' },
-    { name: 'Gallery', href: '/#gallery' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'About', href: `${import.meta.env.BASE_URL}#about` },
+    { name: 'Projects', href: `${import.meta.env.BASE_URL}#projects` },
+    { name: 'Skills', href: `${import.meta.env.BASE_URL}#skills` },
+    { name: 'Experience', href: `${import.meta.env.BASE_URL}#experience` },
+    { name: 'Gallery', href: `${import.meta.env.BASE_URL}#gallery` },
+    { name: 'Contact', href: `${import.meta.env.BASE_URL}#contact` },
   ];
 
   return (

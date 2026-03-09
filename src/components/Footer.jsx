@@ -17,10 +17,10 @@ const Footer = () => {
             <div className="footer-col">
               <h4>Navigation</h4>
               <ul>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#projects">Projects</a></li>
-                <li><a href="/#skills">Skills</a></li>
-                <li><a href="/#contact">Contact</a></li>
+                <li><a href={`${import.meta.env.BASE_URL}#about`}>About</a></li>
+                <li><a href={`${import.meta.env.BASE_URL}#projects`}>Projects</a></li>
+                <li><a href={`${import.meta.env.BASE_URL}#skills`}>Skills</a></li>
+                <li><a href={`${import.meta.env.BASE_URL}#contact`}>Contact</a></li>
               </ul>
             </div>
             <div className="footer-col">

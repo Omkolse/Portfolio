@@ -1,11 +1,13 @@
+const baseUrl = import.meta.env.BASE_URL;
+
 export const projectsData = [
   {
     id: "ros-scout",
     title: "ROS-Scout Autonomous Rover",
     category: "Combined",
     shortDesc: "A small Raspberry Pi 4 based robot designed for sensor testing and data extraction.",
-    image: "/images/projects/ros-scout.png",
-    gallery: ["/images/projects/ros-scout.png"],
+    image: `${baseUrl}images/projects/ros-scout.png`,
+    gallery: [`${baseUrl}images/projects/ros-scout.png`],
     description: "Developed a comprehensive testbed platform from scratch for setting up sensor data extraction pipelines and prototyping new ROS 2 robotic applications. Built with a 3D-printed chassis and utilizing N20 motors.",
     goals: [
       "Extract and utilize Time-of-Flight (ToF) and IMU sensor data.",
@@ -22,9 +24,9 @@ export const projectsData = [
     title: "Humanoid Robot Platform (Optimus-Inspired)",
     category: "Combined",
     shortDesc: "A compact 16-DOF humanoid platform built with ROS2 and Raspberry Pi Zero 2W.",
-    image: "/images/projects/humanoid.png",
-    stlModel: "/models/humanoid.stl",
-    gallery: ["/images/projects/humanoid.png", "/images/gallery/humanoid-2.png", "/images/gallery/humanoid-3.png"],
+    image: `${baseUrl}images/projects/humanoid.png`,
+    stlModel: `${baseUrl}models/humanoid.stl`,
+    gallery: [`${baseUrl}images/projects/humanoid.png`, `${baseUrl}images/gallery/humanoid-2.png`, `${baseUrl}images/gallery/humanoid-3.png`],
     description: "Inspired by the mechanical aesthetics of Optimus Prime, this fully 3D-printable humanoid serves as a research testbed for motion control and ROS2 navigation. It features individual servo control for complex balance and gait experimentation.",
     goals: [
       "Implement 16 DOF precise balance and motion control.",
@@ -42,8 +44,8 @@ export const projectsData = [
     title: "RoboDash: Live Leaderboard System",
     category: "Programming",
     shortDesc: "A real-time React-based Admin Dashboard and Live Leaderboard for robotics competitions.",
-    image: "/images/projects/img_dash_1.png",
-    gallery: ["/images/projects/img_dash_1.png", "/images/projects/img_dash_2.png", "/images/projects/img_dash_3.png"],
+    image: `${baseUrl}images/projects/img_dash_1.png`,
+    gallery: [`${baseUrl}images/projects/img_dash_1.png`, `${baseUrl}images/projects/img_dash_2.png`, `${baseUrl}images/projects/img_dash_3.png`],
     description: "Built 'RoboDash' for the DRAIC Robotics Club to manage live tournament scores, team progressions, and live-display leaderboards during robotics events.",
     goals: [
       "Create a secure Admin Control Center to update team scores on the fly.",
@@ -60,9 +62,9 @@ export const projectsData = [
     title: "Differential Gear Joint Module",
     category: "CAD & Mechanical",
     shortDesc: "A compact 2-DoF robotic joint module using a differential servo-belt configuration.",
-    image: "/images/projects/diff-gear.png",
-    stlModel: "/models/differential_gear.stl",
-    gallery: ["/images/projects/diff-gear.png", "/images/gallery/diff-gear-2.png"],
+    image: `${baseUrl}images/projects/diff-gear.png`,
+    stlModel: `${baseUrl}models/differential_gear.stl`,
+    gallery: [`${baseUrl}images/projects/diff-gear.png`, `${baseUrl}images/gallery/diff-gear-2.png`],
     description: "Advanced mechanical joint design for precision manipulators. It uses high-torque servos in a differential setup to enable two independent axes of motion through coordinated control.",
     goals: [
       "Optimize belt-driven power transmission for minimal backlash using GT2 timing belts.",
@@ -80,9 +82,9 @@ export const projectsData = [
     title: "DRAIC: Interactive Robotics Mascot",
     category: "Combined",
     shortDesc: "A 3D-logo interpreted robotic mascot featuring AI chat and expressive OLED eyes.",
-    image: "/images/projects/draic-bot.png",
-    stlModel: "/models/draic_bot.stl",
-    gallery: ["/images/projects/draic-bot.png", "/images/gallery/draic-2.png"],
+    image: `${baseUrl}images/projects/draic-bot.png`,
+    stlModel: `${baseUrl}models/draic_bot.stl`,
+    gallery: [`${baseUrl}images/projects/draic-bot.png`, `${baseUrl}images/gallery/draic-2.png`],
     description: "Custom-designed robot created from the 3D interpretation of the DRAIC robotics club logo. Serves as a mascot for guest interaction and AI demonstrations during exhibitions.",
     goals: [
       "Transform a flat club logo into a functional 3D physical robotic character.",

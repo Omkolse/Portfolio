@@ -4,6 +4,7 @@ import { Briefcase, GraduationCap, Award, Zap } from 'lucide-react';
 import './Experience.css';
 
 const Experience = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   const experiences = [
     {
       year: 'Aug 2025 - Jan 2026',
@@ -12,8 +13,8 @@ const Experience = () => {
       desc: 'Developed advanced robotic software stacks in ROS over a six month period, driving real-world autonomy and control systems.',
       icon: <Briefcase size={20} />,
       certificates: [
-        { name: 'Certificate', url: '/certificates/eric_robotics_cert.pdf' },
-        { name: 'LOR', url: '/certificates/eric_robotics_lor.pdf' }
+        { name: 'Certificate', url: `${baseUrl}certificates/eric_robotics_cert.pdf` },
+        { name: 'LOR', url: `${baseUrl}certificates/eric_robotics_lor.pdf` }
       ]
     },
     {
@@ -23,7 +24,7 @@ const Experience = () => {
       desc: 'Managed rapid prototyping via SLA/FDM 3D printing and vacuum casting. Notable projects include Adani Defence replicas and large-format structural prototypes.',
       icon: <Zap size={20} />,
       certificates: [
-        { name: 'Internship Certificate', url: '/certificates/3d_wizard.pdf' }
+        { name: 'Internship Certificate', url: `${baseUrl}certificates/3d_wizard.pdf` }
       ]
     },
     {
@@ -33,7 +34,7 @@ const Experience = () => {
       desc: 'Led and organized Robo Soccer & Race events at Apogee BITS Pilani (Rajasthan). Recognized for exceptional leadership and coordination.',
       icon: <Award size={20} />,
       certificates: [
-        { name: 'Volunteer Certificate', url: '/certificates/bits_pilani.pdf' }
+        { name: 'Volunteer Certificate', url: `${baseUrl}certificates/bits_pilani.pdf` }
       ]
     },
     {
@@ -43,7 +44,7 @@ const Experience = () => {
       desc: 'Organized competitive robotics events at Fluxus IIT Indore, managing technical logistics and team coordination.',
       icon: <Award size={20} />,
       certificates: [
-        { name: 'Volunteer Certificate', url: '/certificates/iit_indore.pdf' }
+        { name: 'Volunteer Certificate', url: `${baseUrl}certificates/iit_indore.pdf` }
       ]
     },
     {
