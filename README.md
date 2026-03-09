@@ -1,21 +1,17 @@
-<<<<<<< HEAD
-# React + Vite
+# Robotics Engineering Portfolio
+A professional showcase of robotics development projects, specializing in ROS2, embedded systems, mechanical design, and intelligent autonomous platforms.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Key Projects
+* **Humanoid 1.0:** 16-DOF ROS2-based humanoid platform.
+* **ROS-Scout:** Autonomous SLAM and navigation robot.
+* **Differential Gear System:** High-precision robotic joint actuator.
+* **RoboDash:** Real-time competition leaderboard system.
 
-Currently, two official plugins are available:
+## Technical Expertise
+* **Robotics:** ROS2, SLAM, Navigation, Kinematics.
+* **Embedded:** Raspberry Pi, Arduino, Sensor Fusion, Motor Control.
+* **Design:** SolidWorks, 3D Printing, PCB Development.
+* **Programming:** C++, Python, Linux.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Portfolio
-Robotics engineering portfolio featuring ROS2 development, embedded robotics, mechanical design, and intelligent robot systems.
->>>>>>> 87fa9da7c30ba4855352082a73b8b7209d2f9e60
+---
+Built with React + Vite. Deployed via GitHub Actions.
