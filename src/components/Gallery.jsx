@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 import './Gallery.css';
 
 const Gallery = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   const photos = [
-    { src: '/images/projects/ros-scout.png', alt: 'ROS-Scout Rover Build', span: 'col-span-2 row-span-2' },
-    { src: '/images/gallery/humanoid-2.png', alt: 'Humanoid Joint Assembly', span: '' },
-    { src: '/images/gallery/diff-gear-2.png', alt: 'Differential Gear CAD', span: '' },
-    { src: '/images/gallery/humanoid-3.png', alt: 'Humanoid 1.0 Render', span: 'col-span-2' },
-    { src: '/images/gallery/draic-2.png', alt: 'DRAIC Mascot Design', span: '' },
+    { src: `${baseUrl}images/projects/ros-scout.png`, alt: 'ROS-Scout Rover Build', span: 'col-span-2 row-span-2' },
+    { src: `${baseUrl}images/gallery/humanoid-2.png`, alt: 'Humanoid Joint Assembly', span: '' },
+    { src: `${baseUrl}images/gallery/diff-gear-2.png`, alt: 'Differential Gear CAD', span: '' },
+    { src: `${baseUrl}images/gallery/humanoid-3.png`, alt: 'Humanoid 1.0 Render', span: 'col-span-2' },
+    { src: `${baseUrl}images/gallery/draic-2.png`, alt: 'DRAIC Mascot Design', span: '' },
   ];
 
   return (
