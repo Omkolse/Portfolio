@@ -8,7 +8,7 @@ const Experience = () => {
   const experiences = [
     {
       year: 'Aug 2025 - Jan 2026',
-      title: 'ROS Developer (Full Time)',
+      title: 'ROS Developer (Intern)',
       company: 'Eric Robotics',
       desc: 'Developed advanced robotic software stacks in ROS over a six month period, driving real-world autonomy and control systems.',
       icon: <Briefcase size={20} />,
@@ -19,7 +19,7 @@ const Experience = () => {
     },
     {
       year: 'Oct 2024 - Mar 2025',
-      title: 'Production Engineer / Intern',
+      title: 'Production Engineer (Intern)',
       company: '3D Wizard',
       desc: 'Managed rapid prototyping via SLA/FDM 3D printing and vacuum casting. Notable projects include Adani Defence replicas and large-format structural prototypes.',
       icon: <Zap size={20} />,
